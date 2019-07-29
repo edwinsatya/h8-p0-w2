@@ -2,7 +2,7 @@
 
 //Contoh input
 var nama = 'Edwin';
-var peran = 'Penyihir';
+var peran = 'hmm';
 
 if (nama === '') {
     console.log('Nama harus diisi!');
@@ -15,9 +15,12 @@ if (nama === '') {
     } else if (peran === 'Tabib') {
         console.log('Selamat datang di Dunia Proxytia, ' + nama);
         console.log('Halo ' + peran + ' ' + nama + ', kamu akan membantu temanmu yang terluka.');
-    } else {
+    } else if (peran === 'Penyihir') {
         console.log('Selamat datang di Dunia Proxytia, ' + nama);
         console.log('Halo ' + peran + ' ' + nama + ', ciptakan keajaiban yang membantu kemenanganmu!');
+    } else {
+        console.log('Selamat datang di Dunia Proxytia, ' + nama);
+        console.log('Halo ' + peran + ' ' + nama + ', ciptakan Dunia Sesuka hatimu!');
     }
 }
 
