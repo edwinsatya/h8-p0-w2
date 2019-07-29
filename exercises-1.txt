@@ -1,0 +1,49 @@
+//Pseudocode Challenge
+
+1. Newton Second Law
+STORE 'massa' with 600
+STORE 'percepatan' with 2
+STORE 'Newton' with CALCULATE 'massa' times 'percepatan'
+
+SET 'Newton' with calculation of result
+DISPLAY 'Newton'
+
+2. Tahun Kabisat
+STORE 'tahun' with any Number value
+STORE 'status' with empty String
+
+IF 'tahun' modulo 4 EQUAL TO 0 AND 'tahun' modulo 100 more than 0 
+    THEN SET 'status' with 'Tahun Kabisat'
+ELSE IF 'tahun' modulo 4 EQUAL TO 0 AND 'tahun' modulo 100 EQUAL TO 0 AND 'tahun' modulo 400 EQUAL TO 0
+    THEN SET 'status' with 'Tahun Kabisat'
+ELSE
+    THEN SET 'status' with 'Tahun Bukan Kabisat'
+END IF
+
+DISPLAY 'status'
+
+3. Laundry Day
+STORE 'jmlPakaianPadaMesinCuci' with 0
+STORE 'jmlPakaian' with 20
+
+WHILE 'jmlPakaian' more than 0
+    THEN 
+        ADD 'jmlPakaianPadaMesinCuci' by 1
+        REDUCE 'jmlPakaian' by 1
+END WHILE
+
+DISPLAY 'jmlPakaianPadaMesinCuci'
+
+4. Periksa Kuku
+STORE 'jmlSiswa' with 40
+STORE 'i' with 1 //i = siswa
+
+FOR 'i' less then EQUALS TO jmlSiswa 
+    THEN 
+        IF siswa[i] EQUAL TO 'kukupanjang'
+            THEN DISPLAY 'guru menghukum'
+        ELSE 
+            THEN DISPLAY 'guru memuji'
+        END IF
+    ADD 'i' by 1
+END FOR
